@@ -98,6 +98,7 @@ class KeyringController extends EventEmitter {
       return this.addNewKeyring('HD Key Tree', {
         mnemonic: seed,
         numberOfAccounts: 1,
+        hdPath: "m/44'/1991'/0'/0"
       })
     })
     .then((firstKeyring) => {

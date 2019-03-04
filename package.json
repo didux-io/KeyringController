@@ -1,5 +1,5 @@
 {
-  "name": "eth-keyring-controller",
+  "name": "@smilo-platform/eth-keyring-controller",
   "version": "4.0.0",
   "description": "A module for managing various keyrings of Ethereum accounts, encrypting them, and using them.",
   "main": "index.js",
