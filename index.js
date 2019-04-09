@@ -359,7 +359,14 @@ class KeyringController extends EventEmitter {
   // puts the current seed words into the state tree.
   createFirstKeyTree () {
     this.clearKeyrings()
-    return this.addNewKeyring('HD Key Tree', { numberOfAccounts: 1 })
+    return this.addNewKeyring(
+      'HD Key Tree', 
+      { 
+        numberOfAccounts: 1,
+        hdPath: "m/44'/20080914'/0'/0"
+
+      }
+    )
     .then((keyring) => {
       return keyring.getAccounts()
     })
